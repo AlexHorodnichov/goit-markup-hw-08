@@ -1,0 +1,27 @@
+.hero__container {
+  display: contents;
+}
+.hero-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  background-image: url(../images/icons.svg/bgst.jpg);
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  margin: 0 auto;
+  color: var(--bg-white);
+  padding: 200px 0;
+}
+
+.hero-title {
+  max-width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3636;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--c-white);
+}

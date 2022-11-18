@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/modern-normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <div class="container header__wrapper">
+            <nav class="nav">
+                <a class="logo" href="./index.html"><span class="logo__part footer__part">Web</span>Studio</a>
+                <ul class="nav-list">
+                    <li><a class="nav-list__link" href="./index.html">Студія</a></li>
+                    <li><a class="nav-list__link nav-list__link--current" href="./portfolio.html">Портфоліо</a></li>
+                    <li><a class="nav-list__link" href="#">Контакти</a></li>
+                </ul>
+            </nav>
+            <ul class="contacts-list">
+                <li>
+                    <a class="contacts-list__link" href="mailto:info@devstudio.com"><svg class="contacts-list__icon"
+                            width="16" height="12">
+                            <use href="./images/icons.svg/cont.svg#icon-mail"></use>
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li>
+                    <a class="contacts-list__link contacts-list__link--offset" href="tel:+380961111111"><svg
+                            class="contacts-list__icon" width="10" height="16">
+                            <use href="./images/icons.svg/cont.svg#icon-phone"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- <h1>Портфолио</h1> -->
+        <section class="section">
+
+            <div class="container">
+                <ul class="filter-list">
+                    <li class="filter-list filter-list__filter-item"><button class="filter-list__filter-btn" type="button">Усі</button></li>
+                    <li class="filter-list filter-list__filter-item"><button class="filter-list__filter-btn" type="button">Веб-сайти</button></li>
+                    <li class="filter-list filter-list__filter-item"><button class="filter-list__filter-btn" type="button">Додатки</button></li>
+                    <li class="filter-list filter-list__filter-item"><button class="filter-list__filter-btn" type="button">Дизайн</button></li>
+                    <li class="filter-list filter-list__filter-item"><button class="filter-list__filter-btn" type="button">Маркетинг</button></li>
+                </ul>
+                <ul class="portfolio-list">
+                    <li class="portfolio-list portfolio-list__item">
+                        <a class="portfolio-list__link" href="#">
+                            <div class="portfolio-list__image-wrapper">
+                                <img class="portfolio-list__image" src="./images/portfolio/img(0).jpg"
+                                    alt="Постер New Orlean vs Golden Star" width="370" height="294">
+                                <div class="portfolio-image">
+                                    <p class="portfolio-list__text">
+                                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                        Все
+                                        це
+                                        дозволить відвідувачу отримати
+                                        вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-list__filling">
+                                <h2 class="portfolio-list__name-services">Технокряк</h2>
+                                <p class="portfolio-list__services">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-list portfolio-list__item">
+                        <a class="portfolio-list__link" href="#">
+                            <div class="portfolio-list__image-wrapper">
+                                <img class="portfolio-list__image" src="./images/portfolio/img(1).jpg"
+                                    alt="Постер New Orlean vs Golden Star" width="370" height="294">
+                                <div class="portfolio-images">
+                                    <p class="portfolio-list__text">
+                                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                        Все
+                                        це
+                                        дозволить відвідувачу отримати
+                                        вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="portfolio-list__filling">
+                                <h2 class="portfolio-list__name-services">Постер New Orlean vs Golden Star</h2>
+                                <p class="portfolio-list__services">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-list portfolio-list__item">
+                        <a class="portfolio-list__link" href="#">
+                            <div class="portfolio-list__image-wrapper">
+                                <img class="portfolio-list__image" src="./images/portfolio/img(2).jpg"
+                                    alt="Постер New Orlean vs Golden Star" width="370" height="294">
+                                <div class="portfolio-images">
+                                    <p class="portfolio-list__text">
+                                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                        Все
+                                        це
+                                        дозволить відвідувачу отримати
+                                        вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="portfolio-list__filling">
+                                <h2 class="portfolio-list__name-services">Ресторан Seafood</h2>
+                                <p class="portfolio-list__services">Додаток</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-list portfolio-list__item">
+                        <a class="portfolio-list__link" href="#">
+                            <div class="portfolio-list__image-wrapper">
+                                <img class="portfolio-list__image" src="./images/portfolio/img(3).jpg"
+                                    alt="Постер New Orlean vs Golden Star" width="370" height="294">
+                                <div class="portfolio-images">
+                                    <p class="portfolio-list__text">
+                                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                        Все
+                                        це
+                                        дозволить відвідувачу отримати
+                                        вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="portfolio-list__filling">
+                                <h2 class="portfolio-list__name-services">Проєкт Prime</h2>
+                                <p class="portfolio-list__services">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-list portfolio-list__item">
+                        <a class="portfolio-list__link" href="#">
+                            <div class="portfolio-list__image-wrapper">
+                                <img class="portfolio-list__image" src="./images/portfolio/img(4).jpg"
+                                    alt="Постер New Orlean vs Golden Star" width="370" height="294">
+                                <div class="portfolio-images">
+                                    <p class="portfolio-list__text">
+                                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                        Все
+                                        це
+                                        дозволить відвідувачу отримати
+                                        вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="portfolio-list__filling">
+                                <h2 class="portfolio-list__name-services">Проєкт Boxes</h2>
+                                <p class="portfolio-list__services">Додаток</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-list portfolio-list__item">
+                        <a class="portfolio-list__link" href="#">
+                            <div class="portfolio-list__image-wrapper">
+                                <img class="portfolio-list__image" src="./images/portfolio/img(5).jpg"
+                                    alt="Постер New Orlean vs Golden Star" width="370" height="294">
+                                <div class="portfolio-images">
+                                    <p class="portfolio-list__text">
+                                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                        Все
+                                        це
+                                        дозволить відвідувачу отримати
+                                        вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="portfolio-list__filling">
+                                <h2 class="portfolio-list__name-services">Inspiration has no Borders</h2>
+                                <p class="portfolio-list__services">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-list portfolio-list__item">
+                        <a class="portfolio-list__link" href="#">
+                            <div class="portfolio-list__image-wrapper">
+                                <img class="portfolio-list__image" src="./images/portfolio/img(6).jpg"
+                                    alt="Постер New Orlean vs Golden Star" width="370" height="294">
+                                <div class="portfolio-images">
+                                    <p class="portfolio-list__text">
+                                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                        Все це дозволить відвідувачу отримати
+                                        вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="portfolio-list__filling">
+                                <h2 class="portfolio-list__name-services">Видання Limited Edition</h2>
+                                <p class="portfolio-list__services">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="portfolio-list portfolio-list__item">
+                        <a class="portfolio-list__link" href="#">
+                            <div class="portfolio-list__image-wrapper">
+                                <img class="portfolio-list__image" src="./images/portfolio/img(7).jpg"
+                                    alt="Постер New Orlean vs Golden Star" width="370" height="294">
+                                <div class="portfolio-images">
+                                    <p class="portfolio-list__text">
+                                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                        Все
+                                        це
+                                        дозволить відвідувачу отримати
+                                        вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="portfolio-list__filling">
+                                <h2 class="portfolio-list__name-services">Проєкт LAB</h2>
+                                <p class="portfolio-list__services">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="portfolio-list portfolio-list__item">
+                        <a class="portfolio-list__link" href="#">
+                            <div class="portfolio-list__image-wrapper">
+                                <img class="portfolio-list__image" src="./images/portfolio/img(8).jpg"
+                                    alt="Постер New Orlean vs Golden Star" width="370" height="294">
+                                <div class="portfolio-images">
+                                    <p class="portfolio-list__text">
+                                        Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                        Все
+                                        це
+                                        дозволить відвідувачу отримати
+                                        вичерпні відомості про компанію чи приватну особу.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="portfolio-list__filling">
+                                <h2 class="portfolio-list__name-services">Growing Business</h2>
+                                <p class="portfolio-list__services">Додаток</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="container footer-social">
+            <div>
+                <a class="logo" href="./index.html">Web<span class="logo__footer-part">Studio</span></a>
+                <address class="footer__address">
+                    <a class="footer__item" href="https://goo.gl/maps/DmpzDfKuA3Ak4CY98" target="_blank"
+                        rel="noopener noreferrer">м.
+                        Київ, пр-т Лесі
+                        Українки, 26
+                    </a>
+                    <a class="footer__contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <a class="footer__contacts" href="tel:+380961111111">+38 096 111 11 11</a>
+                </address>
+            </div>
+            <div class="footer__social">
+                <h3 class="footer__title">приєднуйтесь</h3>
+                <ul class="footer__icons-social">
+                    <li>
+                        <a class="footer__social-link" href="#" target="_blank" aria-label="instagram">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer__social-link" href="#" target="_blank" aria-label="twitter">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer__social-link" href="#" target="_blank" aria-label="facebook">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer__social-link" href="#" target="_blank" aria-label="linkedin">
+                            <svg width="20" height="20">
+                                <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__subscription-block">
+                <h3 class="footer__title">
+                    ПІДПИШІТЬСЯ НА РОЗСИЛКУ
+                </h3>
+                <div class="footer__input-box">
+                    <input class="footer__input" type="email" placeholder="E-mail" required>
+                    <button class="footer__btn" type="submit">Підписатися</button>
+                    <svg class="footer__icon" width="24" height="24">
+                        <use href="./images/modal-icons.svg#icon-telegram"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
