@@ -3,7 +3,12 @@ header {
   background: var(--bg-white);
   border: 1px solid var(--brd-c-light-gray);
 }
+.btn-menu{
 
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
 .header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -22,6 +27,9 @@ header {
   gap: 50px;
   padding-inline: 93px 0;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .nav-list li:nth-of-type(4) {
@@ -62,6 +70,9 @@ header {
   margin-top: 28px;
   background: #2196f3;
   border-radius: 2px;
+  @media screen and (max-width: 1200px) {
+    margin-top: 19px;
+  }
 }
 
 li {
@@ -77,10 +88,21 @@ li {
   text-align: left;
   display: flex;
   align-items: center;
+  gap: 30px;
+
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .contacts-list__link {
-    display: flex;
+  display: flex;
   align-items: center;
   color: var(--c-gray);
   font-weight: 500;
@@ -93,11 +115,6 @@ li {
   fill: currentColor;
   margin-right: 10px;
 }
-
-.contacts-list__link--offset {
-  margin-left: 30px;
-}
-
 
 .contacts-list__link:visited {
   color: inherit;

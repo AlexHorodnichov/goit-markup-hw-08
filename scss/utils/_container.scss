@@ -3,8 +3,22 @@
   margin: 0 auto;
   padding: 0 15px;
 }
+.hero__container {
+  display: contents;
+  @media screen and (max-width: 1200px) {
+  padding: 118px 0;
+  }
+}
 
 .footer-social {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  @media screen and (max-width: 1200px) {
+  display: flex;
+  justify-content: center;
+  }
+  @media screen and (max-width: 767px) {
+  gap: 60px;
+  }
 }

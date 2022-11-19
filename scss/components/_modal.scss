@@ -49,6 +49,10 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+    height: 609px;
+  }
 }
 .modal__close {
   display: flex;
@@ -65,8 +69,8 @@
   cursor: pointer;
 }
 .modal__close:hover,
-.modal__close:focus{
-  fill:var(--bg-c-blue)
+.modal__close:focus {
+  fill: var(--bg-c-blue);
 }
 .modal__title {
   margin-bottom: 12px;
@@ -75,9 +79,16 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--c-dark);
+  @media screen and (max-width: 1199px) {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
 }
 
-.user-card--info{
+.user-card--info {
   display: block;
   margin: 10px 0 4px;
   font-size: 12px;
@@ -167,6 +178,10 @@
   border: 1px solid var(--c-gray);
   border-radius: 2px;
   cursor: pointer;
+  @media screen and (max-width: 1199px) {
+    top: 0;
+    left: 0;
+  }
 }
 .checkbox-list input:checked + label::before {
   background-color: var(--bg-c-blue);
@@ -186,13 +201,26 @@
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--c-gray);
+  @media screen and (max-width: 1199px) {
+    margin-left: 24px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+  }
 }
 .checkbox-list__contract {
- font-size: 14px;
-line-height: 1.7142;
-letter-spacing: 0.03em;
-text-decoration-line: underline;
+  font-size: 14px;
+  line-height: 1.7142;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
   color: var(--c-blue);
+  @media screen and (max-width: 1199px) {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+  }
 }
 .modal-brd {
   display: flex;
