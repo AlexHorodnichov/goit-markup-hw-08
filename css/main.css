@@ -407,17 +407,6 @@ body {
   padding-bottom: 25px;
 }
 
-@media screen and (max-width: 767px) {
-  .logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 @media screen and (max-width: 1200px) {
   .logo {
     font-weight: 700;
@@ -469,6 +458,7 @@ body {
 
 .header-menu {
   position: fixed;
+  overflow-y: auto;
   padding: 48px 40px;
   z-index: 3;
   left: 0;
@@ -586,14 +576,9 @@ body {
   color: #2196f3;
 }
 
-.header-menu__social-item::before {
-  margin-right: 10px;
-  content: "";
-  width: 22px;
-  height: 1px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+.header-menu__social-item {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 header {
@@ -780,30 +765,48 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(../images/icons.svg/bgst.jpg);
+  background-image: url(../images/hero-mobile.jpg);
   background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
   color: var(--bg-white);
   padding: 200px 0;
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-device-pixel-ratio: 2) and (max-width: 768px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 768px), (min-resolution: 192dpi) and (max-width: 768px), (min-resolution: 2dppx) and (max-width: 768px) {
   .hero-content {
-    background-image: url(../images/icons.svg/bgst.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile@2x.jpg);
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .hero-content {
-    background-image: url(../images/hero-tablet.jpg);
-    padding: 118px 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet.jpg);
   }
 }
 
-@media screen and (max-width: 480px) {
+@media (min-device-pixel-ratio: 2) and (min-width: 768px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px), (min-resolution: 2dppx) and (min-width: 768px) {
   .hero-content {
-    background-image: url(../images/hero-mobile.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-tablet@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1024pxpx) {
+  .hero-content {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1024px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px), (min-resolution: 192dpi) and (min-width: 1024px), (min-resolution: 2dppx) and (min-width: 1024px) {
+  .hero-content {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bgst@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgst@2x.jpg);
   }
 }
 
@@ -1494,12 +1497,6 @@ li {
           flex-direction: column;
   font-style: normal;
   margin-top: 20px;
-}
-
-@media screen and (max-width: 768px) {
-  .footer__address {
-    margin: 0;
-  }
 }
 
 .footer__contacts {
