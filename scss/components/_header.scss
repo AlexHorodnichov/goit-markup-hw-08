@@ -3,12 +3,6 @@ header {
   background: var(--bg-white);
   border: 1px solid var(--brd-c-light-gray);
 }
-.btn-menu{
-
-  @media screen and (min-width: 767px) {
-    display: none;
-  }
-}
 .header__wrapper {
   display: flex;
   justify-content: space-between;
