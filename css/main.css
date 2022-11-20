@@ -353,6 +353,12 @@ body {
           box-sizing: border-box;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -565,6 +571,8 @@ body {
   display: flex;
   gap: 10px;
   margin-top: 64px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header-menu__social-item {
@@ -576,7 +584,7 @@ body {
   color: #2196f3;
 }
 
-.header-menu__social-item {
+.menu__social-item {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
@@ -798,8 +806,8 @@ li {
 
 @media screen and (min-width: 1024pxpx) {
   .hero-content {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/img.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bgst.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgst.jpg);
   }
 }
 
@@ -1212,13 +1220,13 @@ li {
 
 @media screen and (max-width: 1200px) {
   .features__image {
-    width: 354px;
+    max-width: 354px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .features__image {
-    width: 450px;
+    max-width: 450px;
   }
 }
 
@@ -1423,9 +1431,24 @@ li {
   background-color: var(--bg-c-dark-grey);
 }
 
-@media screen and (max-width: 1200px) and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .footer__list-contacts {
     padding-left: 76px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__list-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1497,6 +1520,15 @@ li {
           flex-direction: column;
   font-style: normal;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__address {
+    margin-top: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .footer__contacts {
