@@ -4,23 +4,32 @@
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 30px;
-
+  
+.features__image-item{
+width: 270px;
+@media screen and (max-width: 1200px) {
+     width: 354px;
+    }
+    @media screen and (max-width: 768px) {
+     width: 450px;
+    }
+}
   &__image {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 120px;
-    width: 270px;
+    // width: 270px;
     border-radius: 4px;
     color: #afb1b8;
     margin-bottom: 30px;
     background-color: #f5f4fa;
-    @media screen and (max-width: 1200px) {
-      width: 354px;
-    }
-    @media screen and (max-width: 768px) {
-      width: 450px;
-    }
+    // @media screen and (max-width: 1200px) {
+    //   width: 354px;
+    // }
+    // @media screen and (max-width: 768px) {
+    //   width: 450px;
+    // }
   }
 
   &__title {

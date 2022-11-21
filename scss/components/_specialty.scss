@@ -1,10 +1,11 @@
 
 .specialty {
   display: flex;
+gap: 30px;
 
 &__list {
   position: relative;
-  margin-right: 30px;
+ 
 }
 
 &__img {
