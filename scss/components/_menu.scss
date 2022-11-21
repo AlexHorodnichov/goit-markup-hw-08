@@ -71,12 +71,18 @@
     color: #2196f3;
   }
 }
+.header-menu__box-content{
+display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 20px;
+}
+
 .header-menu__contacts {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-top: auto;
-  margin-top: 306px;
 }
 .header-menu__contact-tel {
   font-weight: 500;
