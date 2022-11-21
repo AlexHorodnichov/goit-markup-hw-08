@@ -54,6 +54,9 @@
       ),
       url(../images/bgst@2x.jpg);
   }
+  @media screen and (max-width: 1199px) {
+   padding: 118px 0;
+  }
 }
 
 .hero-title {
@@ -67,6 +70,15 @@
   color: var(--c-white);
 
   @media screen and (max-width: 1199px) {
+    max-width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }@media screen and (max-width: 1199px) {
     max-width: 360px;
     font-weight: 900;
     font-size: 26px;

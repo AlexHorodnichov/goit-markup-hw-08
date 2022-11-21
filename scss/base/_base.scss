@@ -8,11 +8,14 @@
 
 .section {
   padding: 94px 0;
+  @media screen and (max-width: 1200px) {
+  padding: 60px 0;
+  }
 }
 .section-content {
   padding: 94px 0 0 0;
 @media screen and (max-width: 1200px) {
-  padding: 94px 0;
+  padding: 60px 0;
   }
 }
 .specialty-hidden{
