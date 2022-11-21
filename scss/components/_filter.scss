@@ -1,13 +1,13 @@
 .filter-list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
 
   &__filter-item {
   font-size: 16px;
   line-height: 1.6;
-  vertical-align: Top;
-  padding-bottom: 50px;
-  margin-right: 8px;
+  vertical-align: Top; 
 }
 &__filter-btn {
   font-weight: 500;

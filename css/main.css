@@ -409,6 +409,17 @@ img {
   }
 }
 
+.portfolio-filter-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+
 .logo {
   font-size: 26px;
   font-family: "Raleway", sans-serif;
@@ -1747,14 +1758,15 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
 }
 
 .filter-list__filter-item {
   font-size: 16px;
   line-height: 1.6;
   vertical-align: Top;
-  padding-bottom: 50px;
-  margin-right: 8px;
 }
 
 .filter-list__filter-btn {
